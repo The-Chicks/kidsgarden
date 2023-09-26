@@ -1,4 +1,4 @@
-import { ReactComponent as CheckedMark } from "@/Assets/icon/ic-checked-mark.svg";
+import { ReactComponent as CheckedMark } from "@/assets/icon/ic-checked-mark.svg";
 
 import { ConsentDiv, ContainerDiv } from "./ConsentCheckWithDetails.style";
 

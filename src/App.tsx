@@ -2,11 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
 
-import LoginPage from "./Pages/LoginPage/LoginPage";
-import ProfilePage from "./Pages/ProfilePage/ProfilePage";
-import SignupPage from "./Pages/SignupPage/SignupPage";
-import GlobalStyles from "./Styles/globalStyles";
-import { theme } from "./Styles/theme";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import SignupPage from "./pages/SignupPage/SignupPage";
+import GlobalStyles from "./styles/globalStyles";
+import { theme } from "./styles/theme";
 
 const App = () => {
 	return (

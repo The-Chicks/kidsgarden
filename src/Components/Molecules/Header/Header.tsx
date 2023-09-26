@@ -1,5 +1,5 @@
-import { ReactComponent as LogoIcon } from "@/Assets/icon/ic-logo.svg";
-import { ReactComponent as ProfileIcon } from "@/Assets/icon/ic-profile.svg";
+import { ReactComponent as LogoIcon } from "@/assets/icon/ic-logo.svg";
+import { ReactComponent as ProfileIcon } from "@/assets/icon/ic-profile.svg";
 
 import { ContainerHeader } from "./Header.style";
 
