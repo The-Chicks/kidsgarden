@@ -3,17 +3,17 @@
   "name": "키즈가든",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "kindergarden-logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "kindergarden-logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "256x256"
     },
     {
-      "src": "logo512.png",
+      "src": "kindergarden-logo-2x.png",
       "type": "image/png",
       "sizes": "512x512"
     }
