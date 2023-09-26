@@ -1,7 +1,6 @@
-import AuthHeader from "@/components/molecules/AuthHeader/AuthHeader";
-import LoginForm from "@/components/molecules/LoginForm/LoginForm";
-
 import { ContainerDiv } from "./LoginPage.style";
+import AuthHeader from "../../Components/Molecules/AuthHeader/AuthHeader";
+import LoginForm from "../../Components/Molecules/LoginForm/LoginForm";
 
 const LoginPage = () => {
 	return (
