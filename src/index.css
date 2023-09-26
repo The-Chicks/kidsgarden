@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("./Fonts/KCC-Ganpan.ttf");
+}
+
+@font-face {
+  font-family: "jamsil-100";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-1.ttf");
+}
+@font-face {
+  font-family: "jamsil-300";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-2.ttf");
+}
+@font-face {
+  font-family: "jamsil-400";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-3.ttf");
+}
+@font-face {
+  font-family: "jamsil-500";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-4.ttf");
+}
+@font-face {
+  font-family: "jamsil-700";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-5.ttf");
+}
+@font-face {
+  font-family: "jamsil-800";
+  src: url("./Fonts/The-Jamsil/The-Jamsil-6.ttf");
+}
