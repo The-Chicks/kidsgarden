@@ -12,30 +12,31 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-   "import/order":[
-    "error",
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "unknown",
-          ["sibling", "parent"]
-        ],
-        "pathGroups": [
-          {
-            "pattern": "{react*,react*/*}",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": [],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        },
-        "newlines-between": "always"
-      }
-    ]
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/order":[
+      "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "unknown",
+            ["sibling", "parent"]
+          ],
+          "pathGroups": [
+            {
+              "pattern": "{react*,react*/*}",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": [],
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "newlines-between": "always"
+        }
+      ]
   },
   "settings": { 
     "import/parsers": {
