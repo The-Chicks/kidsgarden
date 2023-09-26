@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { convertPxToVw } from "../../../utils/convertPxToVw";
-import Button from "../../Atoms/Button/Button";
+import Button from "@/components/atoms/Button/Button";
+import { convertPxToVw } from "@/utils/convertPxToVw";
 
 export const StyledForm = styled.form`
 	margin-top: ${convertPxToVw(50)};

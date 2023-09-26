@@ -1,7 +1,5 @@
-import React from "react";
-
-import Header from "../../Components/Molecules/Header/Header";
-import ProfileTemplate from "../../Components/Templates/ProfileTemplate/ProfileTemplate";
+import Header from "@/components/molecules/Header/Header";
+import ProfileTemplate from "@/components/templates/ProfileTemplate/ProfileTemplate";
 
 const ProfilePage = () => {
 	return (
