@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 import { convertPxToVw } from "../../../utils/convertPxToVw";
 
+export const ContainerDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: ${convertPxToVw(8)};
+	font-family: KCC-Ganpan;
+	font-size: ${convertPxToVw(16)};
+`;
+
 export const StyledInput = styled.input`
 	border: 1px solid ${({ theme }) => theme.color.gray_02};
 	border-radius: ${convertPxToVw(10)};

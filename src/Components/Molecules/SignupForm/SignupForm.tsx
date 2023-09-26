@@ -1,8 +1,8 @@
 import { FormEvent, useState } from "react";
 
 import { ConsentAreaDiv, SignupButton, StyledForm } from "./SignupForm.style";
-import Input from "../../Atoms/Input/Input";
 import ConsentCheckWithDetails from "../ConsentCheckWithDetails/ConsentCheckWithDetails";
+import Input from "../Input/Input";
 
 const SignupForm = () => {
 	const [isConsented, setIsConsented] = useState<boolean[]>([false, false]);
@@ -20,11 +20,11 @@ const SignupForm = () => {
 
 	return (
 		<StyledForm onSubmit={handleSubmit}>
-			<Input placeholder="아이디" />
-			<Input placeholder="비밀번호" type="password" />
-			<Input placeholder="비밀번호 확인" type="password" />
-			<Input placeholder="소속 유치원" />
-			<Input placeholder="아이 이름" />
+			<Input inputProps={{ placeholder: "이메일" }} />
+			<Input inputProps={{ placeholder: "비밀번호", type: "password" }} />
+			<Input inputProps={{ placeholder: "비밀번호 확인", type: "password" }} />
+			<Input inputProps={{ placeholder: "소속" }} />
+			<Input inputProps={{ placeholder: "아이 이름" }} />
 			<ConsentAreaDiv>
 				<ConsentCheckWithDetails
 					title="키즈가든 서비스 이용약관 동의"
