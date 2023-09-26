@@ -1,7 +1,6 @@
-import React from "react";
+import Input from "@/components/molecules/Input/Input";
 
 import { ContainerDiv, FormDiv, StyledButton } from "./ProfileTemplate.style";
-import Input from "../../Molecules/Input/Input";
 
 const ProfileTemplate = () => {
 	return (
