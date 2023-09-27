@@ -6,13 +6,18 @@ import { useAxios } from "@/hooks/useAxios";
 import { LoginButton, StyledForm } from "./LoginForm.style";
 import Input from "../Input/Input";
 
+interface LoginFormType {
+	email: string;
+	password: string;
+}
+
 const LoginForm = () => {
 	const { response, isLoading, refetch } = useAxios({
 		url: "/posts",
 		method: "get",
 	});
 
-	const [formValue, setFormvalue] = useState({
+	const [formValue, setFormvalue] = useState<LoginFormType>({
 		email: "",
 		password: "",
 	});
