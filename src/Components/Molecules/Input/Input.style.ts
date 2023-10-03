@@ -14,7 +14,7 @@ export const ContainerDiv = styled.div`
 export const StyledInput = styled.input`
 	border: 1px solid ${({ theme }) => theme.color.gray_02};
 	border-radius: ${convertPxToVw(10)};
-	color: ${({ theme }) => theme.color.gray_03};
+	color: ${({ theme }) => theme.color.gray_04};
 	padding: ${convertPxToVw(10)};
 	font-size: ${convertPxToVw(16)};
 	line-height: 1.5;

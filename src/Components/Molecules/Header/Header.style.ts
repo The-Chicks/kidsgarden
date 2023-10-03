@@ -7,7 +7,7 @@ export const ContainerHeader = styled.header`
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid ${({ theme: { color } }) => color.gray_02};
-	padding: 0 5%;
+	padding: ${convertPxToVw(4)} 5%;
 
 	& > svg {
 		cursor: pointer;
