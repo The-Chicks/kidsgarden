@@ -15,7 +15,7 @@ export const ContainerDiv = styled.div`
 	}
 `;
 
-export const FormDiv = styled.div`
+export const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	gap: ${convertPxToVw(16)};
