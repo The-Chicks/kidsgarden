@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { ThemeProvider } from "styled-components";
 
@@ -8,10 +10,14 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import GlobalStyles from "./styles/globalStyles";
 import { theme } from "./styles/theme";
-
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
+			<ToastContainer
+				position="top-center"
+				autoClose={800}
+				hideProgressBar={true}
+			/>
 			<GlobalStyles />
 			<BrowserRouter>
 				<Routes>

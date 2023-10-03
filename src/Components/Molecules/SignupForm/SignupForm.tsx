@@ -1,4 +1,6 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import Loading from "@/components/atoms/Loading";
 import { useAxios } from "@/hooks/useAxios";
@@ -13,12 +15,13 @@ import {
 } from "./SignupForm.style";
 import ConsentCheckWithDetails from "../ConsentCheckWithDetails/ConsentCheckWithDetails";
 import Input from "../Input/Input";
-
 interface SignupFormType extends UserType {
 	passwordCheck: string;
 }
 
 const SignupForm = () => {
+	const navigate = useNavigate();
+
 	const { response: responseForDuplication, refetch: refetchDuplication } =
 		useAxios({
 			url: "중복체크",
@@ -47,12 +50,6 @@ const SignupForm = () => {
 
 	const { email, password, passwordCheck, kindergarden, kidsName } = formValue;
 
-	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-		//signup
-		e.preventDefault();
-		// refetchSignup();
-	};
-
 	const handleChangeInput = (e: ChangeEvent<HTMLFormElement>) => {
 		const changed = {
 			...formValue,
@@ -67,20 +64,29 @@ const SignupForm = () => {
 		);
 	};
 
+	const checkEmailEnable = () => {
+		const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+		return emailRegex.test(email);
+	};
+
+	const checkEmailDuplication = () => email === "test@test.com";
+
 	const validateEmail = () => {
+		//중복체크
+		// refetchDuplication();
+		if (checkEmailDuplication()) {
+			setEmailErrorMsg("중복된 이메일입니다.");
+			return;
+		}
 		if (email === "") {
 			setEmailErrorMsg("");
 			return;
 		}
-
-		const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
-		if (!emailRegex.test(email) && email !== "") {
+		if (checkEmailEnable()) {
+			setEmailErrorMsg("사용 가능한 이메일입니다.");
+		} else {
 			setEmailErrorMsg("올바른 이메일 형식이 아닙니다.");
-			return;
 		}
-
-		//중복체크
-		// refetchDuplication();
 	};
 
 	const checkPasswordEnable = () => {
@@ -116,12 +122,24 @@ const SignupForm = () => {
 
 	//이메일 사용가능 조건 추가
 	const checkSubmitEnable = () =>
+		checkEmailEnable() &&
+		!checkEmailDuplication() &&
 		checkPasswordEnable() &&
 		password === passwordCheck &&
 		kindergarden.trim() &&
 		kidsName.trim() &&
 		isConsented[0] &&
 		isConsented[1];
+
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+		//signup
+		e.preventDefault();
+		if (checkSubmitEnable()) {
+			toast.success("회원가입이 완료되었습니다!");
+			navigate("/");
+		}
+		// refetchSignup();
+	};
 
 	useEffect(() => {
 		validateEmail();
@@ -139,7 +157,9 @@ const SignupForm = () => {
 		<StyledForm onChange={handleChangeInput} onSubmit={handleSubmit}>
 			<InputWrapDiv>
 				<Input inputProps={{ name: "email", placeholder: "이메일" }} />
-				<ErrorSpan>{emailErrorMsg}</ErrorSpan>
+				<ErrorSpan $isEnable={checkEmailEnable() && !checkEmailDuplication()}>
+					{emailErrorMsg}
+				</ErrorSpan>
 			</InputWrapDiv>
 			<InputWrapDiv>
 				<Input
