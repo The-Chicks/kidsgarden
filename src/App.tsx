@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import LoginPage from "./pages/LoginPage/LoginPage";
+import MainPage from "./pages/MainPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import GlobalStyles from "./styles/globalStyles";
@@ -17,6 +18,7 @@ const App = () => {
 					<Route path="/login" element={<LoginPage />} />
 					<Route path="/signup" element={<SignupPage />} />
 					<Route path="/profile" element={<ProfilePage />} />
+					<Route path="/" element={<MainPage />} />
 				</Routes>
 			</BrowserRouter>
 		</ThemeProvider>
