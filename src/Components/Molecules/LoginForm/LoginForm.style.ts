@@ -17,4 +17,10 @@ export const LoginButton = styled(Button)`
 	padding: ${convertPxToVw(10)};
 	font-size: ${convertPxToVw(20)};
 	line-height: 1.5;
+
+	&:disabled {
+		background-color: ${({ theme }) => theme.color.gray_02};
+		color: ${({ theme }) => theme.color.gray_01};
+		cursor: not-allowed;
+	}
 `;

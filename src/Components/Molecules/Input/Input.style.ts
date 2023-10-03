@@ -8,6 +8,7 @@ export const ContainerDiv = styled.div`
 	gap: ${convertPxToVw(8)};
 	font-family: KCC-Ganpan;
 	font-size: ${convertPxToVw(16)};
+	width: 100%;
 `;
 
 export const StyledInput = styled.input`

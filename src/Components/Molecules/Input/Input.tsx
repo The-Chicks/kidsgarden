@@ -10,7 +10,7 @@ interface InputProps {
 const Input = ({ title, inputProps }: InputProps) => {
 	return (
 		<ContainerDiv>
-			<label>{title}</label>
+			{title && <label>{title}</label>}
 			<StyledInput {...inputProps} />
 		</ContainerDiv>
 	);
