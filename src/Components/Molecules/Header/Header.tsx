@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { ReactComponent as LogoIcon } from "@/assets/icon/ic-logo.svg";
 import { ReactComponent as ProfileIcon } from "@/assets/icon/ic-profile.svg";
 
@@ -7,7 +9,9 @@ const Header = () => {
 	return (
 		<ContainerHeader>
 			<LogoIcon className="logo-icon" />
-			<ProfileIcon className="profile-icon" />
+			<Link to="/profile">
+				<ProfileIcon className="profile-icon" />
+			</Link>
 		</ContainerHeader>
 	);
 };

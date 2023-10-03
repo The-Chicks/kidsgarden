@@ -2,8 +2,11 @@ import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import { useSetRecoilState } from "recoil";
+
 import Loading from "@/components/atoms/Loading";
 import { useAxios } from "@/hooks/useAxios";
+import { userState } from "@/recoil/atoms/user";
 import { UserType } from "@/types/user";
 
 import {
@@ -15,12 +18,16 @@ import {
 } from "./SignupForm.style";
 import ConsentCheckWithDetails from "../ConsentCheckWithDetails/ConsentCheckWithDetails";
 import Input from "../Input/Input";
+
 interface SignupFormType extends UserType {
+	password: string;
 	passwordCheck: string;
 }
 
 const SignupForm = () => {
 	const navigate = useNavigate();
+
+	const setUserInfo = useSetRecoilState(userState);
 
 	const { response: responseForDuplication, refetch: refetchDuplication } =
 		useAxios({
@@ -135,6 +142,12 @@ const SignupForm = () => {
 		//signup
 		e.preventDefault();
 		if (checkSubmitEnable()) {
+			setUserInfo({
+				email,
+				kidsName,
+				kindergarden,
+				password,
+			});
 			toast.success("회원가입이 완료되었습니다!");
 			navigate("/");
 		}

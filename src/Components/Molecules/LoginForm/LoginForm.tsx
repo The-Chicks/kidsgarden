@@ -2,8 +2,11 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import { useRecoilValue } from "recoil";
+
 import Loading from "@/components/atoms/Loading";
 import { useAxios } from "@/hooks/useAxios";
+import { userState } from "@/recoil/atoms/user";
 
 import { LoginButton, StyledForm } from "./LoginForm.style";
 import Input from "../Input/Input";
@@ -14,6 +17,8 @@ interface LoginFormType {
 
 const LoginForm = () => {
 	const navigate = useNavigate();
+
+	const userInfo = useRecoilValue(userState);
 
 	const { response, isLoading, refetch } = useAxios({
 		url: "/posts",
@@ -39,7 +44,7 @@ const LoginForm = () => {
 
 	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		if (email === "ijh1205@naver.com" && password === "wnstn0630") {
+		if (email === userInfo.email && password === userInfo.password) {
 			navigate("/");
 		} else {
 			toast.error("이메일 또는 비밀번호가 잘못되었습니다.");
