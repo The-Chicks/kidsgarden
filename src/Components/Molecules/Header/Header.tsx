@@ -8,7 +8,9 @@ import { ContainerHeader } from "./Header.style";
 const Header = () => {
 	return (
 		<ContainerHeader>
-			<LogoIcon className="logo-icon" />
+			<Link to="/">
+				<LogoIcon className="logo-icon" />
+			</Link>
 			<Link to="/profile">
 				<ProfileIcon className="profile-icon" />
 			</Link>
