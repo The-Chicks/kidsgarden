@@ -1,8 +1,11 @@
 export interface AnnouncementType {
 	title: string;
 	content: string;
+	onClick: () => void;
 }
 
-export interface NotificationType extends AnnouncementType {
+export interface NotificationType {
+	title: string;
+	content: string;
 	images?: string[];
 }

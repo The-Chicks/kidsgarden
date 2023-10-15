@@ -30,9 +30,7 @@ const App = () => {
 						<Route path="/" element={<Root />}>
 							<Route path="" element={<MainPage />} />
 							<Route path="profile" element={<ProfilePage />} />
-							<Route path="notification" element={<NotificationPage />}>
-								<Route path="announcement/:id" />
-							</Route>
+							<Route path="notification" element={<NotificationPage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>

@@ -2,9 +2,9 @@ import type { AnnouncementType } from "@/types/message";
 
 import { ContainerArticle, TitleDiv } from "./AnnouncementItem.style";
 
-const AnnouncementItem = ({ title, content }: AnnouncementType) => {
+const AnnouncementItem = ({ title, content, onClick }: AnnouncementType) => {
 	return (
-		<ContainerArticle>
+		<ContainerArticle onClick={onClick}>
 			<TitleDiv>
 				<span>{title}</span>
 			</TitleDiv>

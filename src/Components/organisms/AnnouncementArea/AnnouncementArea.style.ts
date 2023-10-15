@@ -20,11 +20,4 @@ export const AreaDiv = styled.div`
 	&::-webkit-scrollbar {
 		display: none;
 	}
-
-	& > a {
-		background-color: ${({ theme }) => theme.color.main_03};
-		padding: ${convertPxToVw(12)};
-		border-radius: ${convertPxToVw(10)};
-		min-width: ${convertPxToVw(130)};
-	}
 `;
