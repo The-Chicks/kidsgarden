@@ -7,6 +7,7 @@ export const ContainerArticle = styled.article`
 	padding: ${convertPxToVw(12)};
 	border-radius: ${convertPxToVw(10)};
 	min-width: ${convertPxToVw(130)};
+	cursor: pointer;
 
 	.margin {
 		margin-top: ${convertPxToVw(12)};
