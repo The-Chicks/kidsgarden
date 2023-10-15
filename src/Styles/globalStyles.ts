@@ -130,10 +130,17 @@ const GlobalStyles = createGlobalStyle`${css`
 		padding: 0;
 		box-sizing: border-box;
 		line-height: 1;
+		background-color: ${({ theme }) => theme.color.gray_01};
+		padding-top: constant(safe-area-inset-top);
+		padding-top: env(safe-area-inset-top);
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
 
 		#root {
-			max-width: 1080px;
+			max-width: 600px;
+			min-height: 100vh;
 			margin: 0 auto;
+			background-color: #fff;
 		}
 	}
 
@@ -155,7 +162,6 @@ const GlobalStyles = createGlobalStyle`${css`
 		); // 모바일에서 꾹 누를 때 색상 변경
 		user-select: none; // 텍스트 선택 못 함
 		-webkit-touch-callout: none; // 모바일에서 링크 길게 누를 때 메뉴 안 뜨게
-		touch-action: none;
 	}
 `}
 `;

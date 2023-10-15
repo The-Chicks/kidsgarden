@@ -6,7 +6,6 @@ export const Button = styled.button`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	cursor: pointer;
 
 	& > svg {
 		width: ${convertPxToVw(70)};

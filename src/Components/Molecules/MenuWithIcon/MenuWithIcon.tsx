@@ -1,11 +1,11 @@
-import { Button } from "./CategoryWithMenu.style";
+import { Button } from "./MenuWithIcon.style";
 
-interface CategoryWithMenuProps {
+interface MenuWithIconProps {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	icon: any;
 	title: string;
 }
-const CategoryWithMenu = ({ icon, title }: CategoryWithMenuProps) => {
+const MenuWithIcon = ({ icon, title }: MenuWithIconProps) => {
 	return (
 		<Button>
 			{/* {icon} */}
@@ -15,4 +15,4 @@ const CategoryWithMenu = ({ icon, title }: CategoryWithMenuProps) => {
 	);
 };
 
-export default CategoryWithMenu;
+export default MenuWithIcon;
