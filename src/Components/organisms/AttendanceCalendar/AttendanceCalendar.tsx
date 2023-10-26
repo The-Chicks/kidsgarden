@@ -11,8 +11,8 @@ const AttendanceCalendar = () => {
 		{ year: 2023, month: 10, date: 5, status: "PRESENTED" },
 		{ year: 2023, month: 10, date: 6, status: "PRESENTED" },
 		{ year: 2023, month: 10, date: 9, status: "PRESENTED" },
-		{ year: 2023, month: 10, date: 12, status: "ABSENT" },
-		{ year: 2023, month: 10, date: 13, status: "EARLY_LEAVE" },
+		{ year: 2023, month: 10, date: 10, status: "ABSENT" },
+		{ year: 2023, month: 10, date: 11, status: "EARLY_LEAVE" },
 	];
 
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
