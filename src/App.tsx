@@ -5,14 +5,18 @@ import "react-toastify/dist/ReactToastify.css";
 import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 
-import AttendancePage from "./pages/AttendancePage";
-import InformationPage from "./pages/InformationPage";
-import LoginPage from "./pages/LoginPage/LoginPage";
-import MainPage from "./pages/MainPage";
-import NotificationPage from "./pages/NotificationPage/NotificationPage";
-import ProfilePage from "./pages/ProfilePage/ProfilePage";
-import Root from "./pages/Root";
-import SignupPage from "./pages/SignupPage/SignupPage";
+import {
+	AttendancePage,
+	InformationPage,
+	InquiryDetailPage,
+	InquiryPage,
+	LoginPage,
+	MainPage,
+	NotificationPage,
+	ProfilePage,
+	Root,
+	SignupPage,
+} from "./pages";
 import GlobalStyles from "./styles/globalStyles";
 import { theme } from "./styles/theme";
 
@@ -36,6 +40,8 @@ const App = () => {
 							<Route path="notification" element={<NotificationPage />} />
 							<Route path="attendance" element={<AttendancePage />} />
 							<Route path="information" element={<InformationPage />} />
+							<Route path="inquiry" element={<InquiryPage />} />
+							<Route path="inquiry/:id" element={<InquiryDetailPage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>
