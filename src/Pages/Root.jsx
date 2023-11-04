@@ -9,7 +9,7 @@ const Root = () => {
 
 	return (
 		<>
-			<div style={{ position: "sticky", top: 0 }}>
+			<div style={{ position: "sticky", top: 0, zIndex: 99 }}>
 				<Header />
 				{hasNavigation && <MenuArea />}
 			</div>
