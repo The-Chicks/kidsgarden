@@ -37,9 +37,8 @@ const InquiryTemplate = () => {
 			<h1>내 대화</h1>
 			<InquiryAreaDiv>
 				{cardList.map(({ id, title, isAnswered, createdAt }) => (
-					<Link to={`/inquiry/${id}`}>
+					<Link to={`/inquiry/${id}`} key={id}>
 						<InquiryCard
-							key={id}
 							title={title}
 							isAnswered={isAnswered}
 							createdAt={createdAt}
