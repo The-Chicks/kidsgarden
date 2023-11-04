@@ -5,7 +5,10 @@ import MenuArea from "@/components/molecules/MenuArea/MenuArea";
 
 const Root = () => {
 	const path = useLocation().pathname;
-	const hasNavigation = path !== "/" && !path.includes("/inquiry/");
+	const hasNavigation =
+		path !== "/" &&
+		!path.includes("inquiry/") &&
+		!path.includes("create-inquiry");
 
 	return (
 		<>

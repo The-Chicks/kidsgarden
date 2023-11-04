@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 
+import { ReactComponent as PenIcon } from "@/assets/icon/ic-pen.svg";
 import InquiryCard from "@/components/molecules/InquiryCard/InquiryCard";
 
-import { ContainerDiv, InquiryAreaDiv } from "./InquiryTemplate.style";
+import {
+	ButtonWrapDiv,
+	ContainerDiv,
+	InquiryAreaDiv,
+	CreateButton,
+} from "./InquiryTemplate.style";
 
 const cardList = [
 	{
@@ -46,6 +52,13 @@ const InquiryTemplate = () => {
 					</Link>
 				))}
 			</InquiryAreaDiv>
+			<ButtonWrapDiv>
+				<Link to="/create-inquiry">
+					<CreateButton>
+						<PenIcon />
+					</CreateButton>
+				</Link>
+			</ButtonWrapDiv>
 		</ContainerDiv>
 	);
 };

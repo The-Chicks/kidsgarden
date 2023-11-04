@@ -1,5 +1,6 @@
 import AttendancePage from "./AttendancePage";
 import InformationPage from "./InformationPage";
+import InquiryCreatePage from "./InquiryCreatePage/InquiryCreatePage";
 import InquiryDetailPage from "./InquiryDetailPage/InquiryDetailPage";
 import InquiryPage from "./InquiryPage/InquiryPage";
 import LoginPage from "./LoginPage/LoginPage";
@@ -20,4 +21,5 @@ export {
 	ProfilePage,
 	SignupPage,
 	Root,
+	InquiryCreatePage,
 };
