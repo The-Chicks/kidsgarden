@@ -98,6 +98,7 @@ export const EditInput = styled.input`
 export const EditTextarea = styled.textarea`
 	resize: none;
 	width: calc(100% - ${convertPxToVw(10)});
+	height: ${convertPxToVw(300)};
 	border: 1px solid ${({ theme }) => theme.color.main_03};
 	padding: ${convertPxToVw(4)};
 	font-family: jamsil-400;

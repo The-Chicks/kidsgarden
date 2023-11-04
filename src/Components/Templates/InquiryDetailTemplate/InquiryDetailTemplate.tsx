@@ -1,6 +1,4 @@
-import { useRef, useState } from "react";
-
-import { autoResizeTextarea } from "@/utils/autoResizeTextarea";
+import { useState } from "react";
 
 import {
 	ButtonWrapDiv,
@@ -29,8 +27,6 @@ const info = {
 const InquiryDetailTemplate = () => {
 	const { title, content, isAnswered, createdAt, teacherContent } = info;
 
-	const textareaRef = useRef<HTMLTextAreaElement | null>(null);
-
 	const [isEdit, setIsEdit] = useState(false);
 
 	return (
@@ -50,20 +46,7 @@ const InquiryDetailTemplate = () => {
 					</InfoDiv>
 				</TitleDiv>
 				<ContentP>
-					{isEdit ? (
-						<EditTextarea
-							ref={textareaRef}
-							onKeyDown={() => {
-								autoResizeTextarea(textareaRef);
-							}}
-							onKeyUp={() => {
-								autoResizeTextarea(textareaRef);
-							}}
-							defaultValue={content}
-						/>
-					) : (
-						content
-					)}
+					{isEdit ? <EditTextarea defaultValue={content} /> : content}
 				</ContentP>
 			</ParentCard>
 			{isAnswered && <TeacherCard>{teacherContent}</TeacherCard>}
