@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 
+import AttendancePage from "./pages/AttendancePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import MainPage from "./pages/MainPage";
 import NotificationPage from "./pages/NotificationPage/NotificationPage";
@@ -13,6 +14,7 @@ import Root from "./pages/Root";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import GlobalStyles from "./styles/globalStyles";
 import { theme } from "./styles/theme";
+
 const App = () => {
 	return (
 		<RecoilRoot>
@@ -31,6 +33,7 @@ const App = () => {
 							<Route path="" element={<MainPage />} />
 							<Route path="profile" element={<ProfilePage />} />
 							<Route path="notification" element={<NotificationPage />} />
+							<Route path="attendance" element={<AttendancePage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>
