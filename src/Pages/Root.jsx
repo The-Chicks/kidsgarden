@@ -5,12 +5,16 @@ import MenuArea from "@/components/molecules/MenuArea/MenuArea";
 
 const Root = () => {
 	const path = useLocation().pathname;
+	const hasNavigation =
+		path !== "/" &&
+		!path.includes("inquiry/") &&
+		!path.includes("create-inquiry");
 
 	return (
 		<>
-			<div style={{ position: "sticky", top: 0 }}>
+			<div style={{ position: "sticky", top: 0, zIndex: 99 }}>
 				<Header />
-				{path !== "/" && <MenuArea />}
+				{hasNavigation && <MenuArea />}
 			</div>
 			<Outlet />
 		</>
