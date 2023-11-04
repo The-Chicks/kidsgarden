@@ -6,6 +6,7 @@ import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 
 import AttendancePage from "./pages/AttendancePage";
+import InformationPage from "./pages/InformationPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import MainPage from "./pages/MainPage";
 import NotificationPage from "./pages/NotificationPage/NotificationPage";
@@ -34,6 +35,7 @@ const App = () => {
 							<Route path="profile" element={<ProfilePage />} />
 							<Route path="notification" element={<NotificationPage />} />
 							<Route path="attendance" element={<AttendancePage />} />
+							<Route path="information" element={<InformationPage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>
