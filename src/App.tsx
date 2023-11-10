@@ -7,7 +7,6 @@ import { ThemeProvider } from "styled-components";
 
 import {
 	AttendancePage,
-	InformationPage,
 	InquiryCreatePage,
 	InquiryDetailPage,
 	InquiryPage,
@@ -40,7 +39,6 @@ const App = () => {
 							<Route path="profile" element={<ProfilePage />} />
 							<Route path="notification" element={<NotificationPage />} />
 							<Route path="attendance" element={<AttendancePage />} />
-							<Route path="information" element={<InformationPage />} />
 							<Route path="inquiry" element={<InquiryPage />} />
 							<Route path="inquiry/:id" element={<InquiryDetailPage />} />
 							<Route path="create-inquiry" element={<InquiryCreatePage />} />
