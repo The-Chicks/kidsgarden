@@ -3,3 +3,9 @@ export interface InquiryCardType {
 	isAnswered: boolean;
 	createdAt: string;
 }
+
+export interface MealCardType {
+	type: "MORNING_SNACK" | "LUNCH" | "AFTERNOON_SNACK";
+	menu: string;
+	imageList?: string[];
+}
