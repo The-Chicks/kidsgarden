@@ -4,6 +4,7 @@ import InquiryDetailPage from "./InquiryDetailPage/InquiryDetailPage";
 import InquiryPage from "./InquiryPage/InquiryPage";
 import LoginPage from "./LoginPage/LoginPage";
 import MainPage from "./MainPage";
+import MealMenuPage from "./MealMenuPage";
 import NotificationPage from "./NotificationPage/NotificationPage";
 import ProfilePage from "./ProfilePage/ProfilePage";
 import Root from "./Root";
@@ -20,4 +21,5 @@ export {
 	SignupPage,
 	Root,
 	InquiryCreatePage,
+	MealMenuPage,
 };

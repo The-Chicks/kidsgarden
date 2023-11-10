@@ -12,6 +12,7 @@ import {
 	InquiryPage,
 	LoginPage,
 	MainPage,
+	MealMenuPage,
 	NotificationPage,
 	ProfilePage,
 	Root,
@@ -42,6 +43,7 @@ const App = () => {
 							<Route path="inquiry" element={<InquiryPage />} />
 							<Route path="inquiry/:id" element={<InquiryDetailPage />} />
 							<Route path="create-inquiry" element={<InquiryCreatePage />} />
+							<Route path="menu-board" element={<MealMenuPage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>
