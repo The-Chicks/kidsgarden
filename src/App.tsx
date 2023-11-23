@@ -6,6 +6,7 @@ import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 
 import {
+	AlbumPage,
 	AttendancePage,
 	InquiryCreatePage,
 	InquiryDetailPage,
@@ -46,6 +47,7 @@ const App = () => {
 							<Route path="create-inquiry" element={<InquiryCreatePage />} />
 							<Route path="menu-board" element={<MealMenuPage />} />
 							<Route path="schedule" element={<SchedulePage />} />
+							<Route path="album" element={<AlbumPage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>

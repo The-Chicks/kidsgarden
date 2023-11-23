@@ -1,3 +1,4 @@
+import AlbumPage from "./AlbumPage";
 import AttendancePage from "./AttendancePage";
 import InquiryCreatePage from "./InquiryCreatePage/InquiryCreatePage";
 import InquiryDetailPage from "./InquiryDetailPage/InquiryDetailPage";
@@ -24,4 +25,5 @@ export {
 	InquiryCreatePage,
 	MealMenuPage,
 	SchedulePage,
+	AlbumPage,
 };
