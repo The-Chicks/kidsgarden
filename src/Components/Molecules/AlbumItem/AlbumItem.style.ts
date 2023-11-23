@@ -22,11 +22,13 @@ export const ContentDiv = styled.div`
 export const TitleSpan = styled.span`
 	color: ${({ theme }) => theme.color.main_04};
 	font-size: ${convertPxToVw(16)};
+	line-height: 1.2;
 `;
 
 export const ContentP = styled.p`
 	margin-top: ${convertPxToVw(12)};
 	font-size: ${convertPxToVw(12)};
+	line-height: 1.2;
 `;
 
 export const DateDiv = styled.div`

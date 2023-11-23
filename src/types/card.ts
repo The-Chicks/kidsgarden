@@ -9,3 +9,10 @@ export interface MealCardType {
 	menu: string;
 	imageList?: string[];
 }
+
+export interface AlbumItemType {
+	title: string;
+	content: string;
+	src: string;
+	createdAt: string;
+}
