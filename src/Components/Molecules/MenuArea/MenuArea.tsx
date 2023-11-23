@@ -7,7 +7,7 @@ import { ContainerSection } from "./MenuArea.style";
 const categories = [
 	{ title: "알림장", path: "/notification" },
 	{ title: "앨범", path: "/album" },
-	{ title: "일정표", path: "/calendar" },
+	{ title: "일정표", path: "/schedule" },
 	{ title: "식단", path: "/menu-board" },
 	{ title: "선생님 대화", path: "/inquiry" },
 	{ title: "출석표", path: "/attendance" },
