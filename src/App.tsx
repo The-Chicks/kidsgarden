@@ -16,6 +16,7 @@ import {
 	NotificationPage,
 	ProfilePage,
 	Root,
+	SchedulePage,
 	SignupPage,
 } from "./pages";
 import GlobalStyles from "./styles/globalStyles";
@@ -44,6 +45,7 @@ const App = () => {
 							<Route path="inquiry/:id" element={<InquiryDetailPage />} />
 							<Route path="create-inquiry" element={<InquiryCreatePage />} />
 							<Route path="menu-board" element={<MealMenuPage />} />
+							<Route path="schedule" element={<SchedulePage />} />
 						</Route>
 					</Routes>
 				</BrowserRouter>

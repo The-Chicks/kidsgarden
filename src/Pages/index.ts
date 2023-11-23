@@ -8,6 +8,7 @@ import MealMenuPage from "./MealMenuPage";
 import NotificationPage from "./NotificationPage/NotificationPage";
 import ProfilePage from "./ProfilePage/ProfilePage";
 import Root from "./Root";
+import SchedulePage from "./SchedulePage";
 import SignupPage from "./SignupPage/SignupPage";
 
 export {
@@ -22,4 +23,5 @@ export {
 	Root,
 	InquiryCreatePage,
 	MealMenuPage,
+	SchedulePage,
 };
