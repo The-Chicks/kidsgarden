@@ -1,5 +1,5 @@
-import AuthHeader from "@/components/molecules/AuthHeader/AuthHeader";
-import LoginForm from "@/components/molecules/LoginForm/LoginForm";
+import AuthHeader from "@/components/Molecules/AuthHeader/AuthHeader";
+import LoginForm from "@/components/Molecules/LoginForm/LoginForm";
 
 import { ContainerDiv } from "./LoginPage.style";
 

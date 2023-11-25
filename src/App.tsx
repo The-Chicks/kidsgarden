@@ -5,6 +5,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 
+import GlobalStyles from "@/styles/globalStyles";
+import { theme } from "@/styles/theme";
+
 import {
 	AlbumPage,
 	AttendancePage,
@@ -19,9 +22,7 @@ import {
 	Root,
 	SchedulePage,
 	SignupPage,
-} from "./pages";
-import GlobalStyles from "./styles/globalStyles";
-import { theme } from "./styles/theme";
+} from "./Pages";
 
 const App = () => {
 	return (

@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 
-import Header from "@/components/molecules/Header/Header";
-import MenuArea from "@/components/molecules/MenuArea/MenuArea";
+import Header from "@/components/Molecules/Header/Header";
+import MenuArea from "@/components/Molecules/MenuArea/MenuArea";
 
 const Root = () => {
 	const path = useLocation().pathname;

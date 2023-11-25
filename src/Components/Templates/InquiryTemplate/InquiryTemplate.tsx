@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { ReactComponent as PenIcon } from "@/assets/icon/ic-pen.svg";
-import InquiryCard from "@/components/molecules/InquiryCard/InquiryCard";
+import InquiryCard from "@/components/Molecules/InquiryCard/InquiryCard";
 
 import {
 	ButtonWrapDiv,

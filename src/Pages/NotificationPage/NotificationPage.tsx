@@ -1,4 +1,4 @@
-import NotificationTemplate from "@/components/templates/NotificationTemplate/NotificationTemplate";
+import NotificationTemplate from "@/components/Templates/NotificationTemplate/NotificationTemplate";
 
 import { ContainerDiv } from "./NotificationPage.style";
 

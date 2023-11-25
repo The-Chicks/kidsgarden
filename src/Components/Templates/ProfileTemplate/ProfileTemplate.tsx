@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 import { useRecoilState } from "recoil";
 
-import Input from "@/components/molecules/Input/Input";
+import Input from "@/components/Molecules/Input/Input";
 import { userState } from "@/recoil/atoms/user";
 
 import {

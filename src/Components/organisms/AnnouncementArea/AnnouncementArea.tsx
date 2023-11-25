@@ -1,6 +1,6 @@
 import { useSetRecoilState } from "recoil";
 
-import AnnouncementItem from "@/components/molecules/AnnouncementItem/AnnouncementItem";
+import AnnouncementItem from "@/components/Molecules/AnnouncementItem/AnnouncementItem";
 import { modalState } from "@/recoil/atoms/modal";
 
 import { AreaDiv, ContainerSection } from "./AnnouncementArea.style";

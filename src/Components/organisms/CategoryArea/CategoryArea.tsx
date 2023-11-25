@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "@/assets/icon/ic-logo.svg";
-import MenuWithIcon from "@/components/molecules/MenuWithIcon/MenuWithIcon";
+import MenuWithIcon from "@/components/Molecules/MenuWithIcon/MenuWithIcon";
 
 import { ContainerSection } from "./CategoryArea.style";
 

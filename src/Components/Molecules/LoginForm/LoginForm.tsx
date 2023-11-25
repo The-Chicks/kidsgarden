@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 import { useRecoilValue } from "recoil";
 
-import Loading from "@/components/atoms/Loading";
+import Loading from "@/components/Atoms/Loading";
 import { useAxios } from "@/hooks/useAxios";
 import { userState } from "@/recoil/atoms/user";
 

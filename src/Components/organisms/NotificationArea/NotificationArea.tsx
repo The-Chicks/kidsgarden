@@ -1,4 +1,4 @@
-import NotificationItem from "@/components/molecules/NotificationItem/NotificationItem";
+import NotificationItem from "@/components/Molecules/NotificationItem/NotificationItem";
 
 import { ContainerSection } from "./NotificationArea.style";
 

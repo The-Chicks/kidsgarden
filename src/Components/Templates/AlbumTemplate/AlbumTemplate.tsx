@@ -1,4 +1,4 @@
-import AlbumItem from "@/components/molecules/AlbumItem/AlbumItem";
+import AlbumItem from "@/components/Molecules/AlbumItem/AlbumItem";
 
 import { ContainerDiv } from "./AlbumTemplate.style";
 

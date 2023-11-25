@@ -1,4 +1,4 @@
-import InquiryTemplate from "@/components/templates/InquiryTemplate/InquiryTemplate";
+import InquiryTemplate from "@/components/Templates/InquiryTemplate/InquiryTemplate";
 
 import { ContainerDiv } from "./InquiryPage.style";
 

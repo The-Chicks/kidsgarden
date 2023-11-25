@@ -1,6 +1,6 @@
 import { MealCardType } from "@/types/card";
 
-import MealCard from "../molecules/MealCard/MealCard";
+import MealCard from "../Molecules/MealCard/MealCard";
 
 const mealList: MealCardType[] = [
 	{

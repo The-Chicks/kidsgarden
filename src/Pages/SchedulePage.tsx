@@ -1,4 +1,4 @@
-import ScheduleTemplate from "@/components/templates/ScheduleTemplate/ScheduleTemplate";
+import ScheduleTemplate from "@/components/Templates/ScheduleTemplate/ScheduleTemplate";
 
 const SchedulePage = () => {
 	return <ScheduleTemplate />;

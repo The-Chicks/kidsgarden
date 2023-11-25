@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Button from "@/components/atoms/Button/Button";
+import Button from "@/components/Atoms/Button/Button";
 import { convertPxToVw } from "@/utils/convertPxToVw";
 
 export const StyledForm = styled.form`

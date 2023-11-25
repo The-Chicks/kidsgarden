@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import Menu from "@/components/atoms/Menu/Menu";
+import Menu from "@/components/Atoms/Menu/Menu";
 
 import { ContainerSection } from "./MenuArea.style";
 

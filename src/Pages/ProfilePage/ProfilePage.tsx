@@ -1,4 +1,4 @@
-import ProfileTemplate from "@/components/templates/ProfileTemplate/ProfileTemplate";
+import ProfileTemplate from "@/components/Templates/ProfileTemplate/ProfileTemplate";
 
 const ProfilePage = () => {
 	return <ProfileTemplate />;

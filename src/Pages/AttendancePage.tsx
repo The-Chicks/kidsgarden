@@ -1,4 +1,4 @@
-import AttendanceTemplate from "@/components/templates/AttendanceTemplate";
+import AttendanceTemplate from "@/components/Templates/AttendanceTemplate";
 
 const AttendancePage = () => <AttendanceTemplate />;
 

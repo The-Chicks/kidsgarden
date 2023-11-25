@@ -2,12 +2,12 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@/assets/*": ["./assets/*"],
-      "@/components/*": ["./components/*"],
-      "@/fonts/*": ["./fonts/*"],
-      "@/pages/*": ["./pages/*"],
+      "@/assets/*": ["./Assets/*"],
+      "@/components/*": ["./Components/*"],
+      "@/fonts/*": ["./Fonts/*"],
+      "@/pages/*": ["./Pages/*"],
       "@/hooks/*": ["./hooks/*"],
-      "@/styles/*": ["./styles/*"],
+      "@/styles/*": ["./Styles/*"],
       "@/utils/*": ["./utils/*"],
       "@/types/*": ["./types/*"],
       "@/recoil/*": ["./recoil/*"]

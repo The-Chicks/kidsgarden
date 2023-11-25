@@ -1,4 +1,4 @@
-import AlbumTemplate from "@/components/templates/AlbumTemplate/AlbumTemplate";
+import AlbumTemplate from "@/components/Templates/AlbumTemplate/AlbumTemplate";
 
 const AlbumPage = () => {
 	return <AlbumTemplate />;
